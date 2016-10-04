@@ -2,6 +2,7 @@
 export const isNumberEven = (i) => {
   // i will be an integer.
   // Return true if it's even, and false if it isn't.
+    let mod=0;
 };
 
 export const getFileExtension = (str) => {
