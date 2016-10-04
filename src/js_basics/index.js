@@ -2,7 +2,7 @@
 export const isNumberEven = (i) => {
   // i will be an integer.
   // Return true if it's even, and false if it isn't.
-    let mod=0;
+
     let iseven=false;
     if((i===0)||(i%2===0))
     {
@@ -17,6 +17,15 @@ export const isNumberEven = (i) => {
 export const getFileExtension = (str) => {
   // str will be a string, but it may not have a file extension.
   // Return the file extension (with no period) if it has one, otherwise false
+let ext="";
+let tmpStr="";
+  tmpStr=str.split('.');
+
+  if(tmpStr.length<2){
+    return false;
+  }
+  ext=tmpStr.pop();
+  return ext;
 };
 
 export const longestString = (arr) => {
