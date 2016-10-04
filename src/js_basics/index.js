@@ -31,11 +31,27 @@ let tmpStr="";
 export const longestString = (arr) => {
   // arr will be an array.
   // Return the longest string in the array
+  //let regX = /[a-zA-Z]/gi;
+  let strMax="";
+for (let i=0; i<arr.length;i+=1){
+  let strTemp=arr[i];
+ if(typeof strTemp===('string')&&(strTemp.length>=strMax.length))
+    strMax=strTemp;
+}
+  return (strMax);
 };
 
 export const reverseString = (str) => {
   // str will be an string
   // Return a new string who's characters are in the opposite order to str's.
+  let n   =  "";
+        for( let i=str.length-1; i >= 0; i--){
+                n += this.charAt(i);
+                }
+        return n;
+        //let sRev=str.split();
+  //sRev.reverse();
+//return (sRev);
 };
 
 export const isPalindrome = (str) => {
