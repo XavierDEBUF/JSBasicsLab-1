@@ -44,10 +44,11 @@ for (let i=0; i<arr.length;i+=1){
 export const reverseString = (str) => {
   // str will be an string
   // Return a new string who's characters are in the opposite order to str's.
-  let n   =  "";
+
+  let n ='';
         for( let i=str.length-1; i >= 0; i--){
-                n += this.charAt(i);
-                }
+                n += str.charAt(i);
+              }
         return n;
         //let sRev=str.split();
   //sRev.reverse();
@@ -57,7 +58,8 @@ export const reverseString = (str) => {
 export const isPalindrome = (str) => {
   // str will be an string
   // Return true if it is a palindrome and false otherwise.
-  // It should be case insensitive and not consider space or punctuation.
+  // It should be case insensitive and not consider space or punctuation
+  let ChaineMid=(str.length).Math.div(2);
 };
 
 export const nestedSum = (arr) => {
