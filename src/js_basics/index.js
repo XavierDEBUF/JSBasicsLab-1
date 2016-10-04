@@ -3,6 +3,15 @@ export const isNumberEven = (i) => {
   // i will be an integer.
   // Return true if it's even, and false if it isn't.
     let mod=0;
+    let iseven=false;
+    if((i===0)||(i%2===0))
+    {
+      iseven=true;
+    }
+    else   {
+      iseven=false;
+    }
+    return(iseven);
 };
 
 export const getFileExtension = (str) => {
