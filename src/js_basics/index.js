@@ -59,10 +59,27 @@ export const isPalindrome = (str) => {
   // str will be an string
   // Return true if it is a palindrome and false otherwise.
   // It should be case insensitive and not consider space or punctuation
-  let ChaineMid=(str.length).Math.div(2);
+//  let ChaineMid=(str.length).Math.div(2);
+  let strToArr=str.toUpperCase();
+  let arrStr=strToArr.split('');
+  //let str = str.subString(0,ChaineMid);
+  //let reverseComp=reverseString(strCompare);
+  //let n ='';
+        for( let i=0; i < (arrStr.length/2); i++){
+                if(arrStr[i]!==arrStr[arrStr.length-i-1])
+                return false;
+              }
+        return true;
+
 };
 
 export const nestedSum = (arr) => {
   // arr will be an array, containing integers, strings and/or arrays like itself
   // Return the sum all the numbers you find, anywhere in the nest of arrays.
+
+for(let i=0;i<arr.length; i++){
+  Array.isArray(arr[i] sum+=nestedSum(arr[i]))
+
+}
+//  Array.isArray(arr[i] sum+=nestedSum(arr[i]))
 };
